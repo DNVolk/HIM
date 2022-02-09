@@ -9,14 +9,13 @@ import org.junit.runner.RunWith;
         (
                 plugin= {
                         "html:target/cucumber-report.html",
-                        "rerun:target/rerun.txt",
+                        "rerun:target/rerun.txt", //in case of test fails (multithreading) false fail
                         "json:target/cucumber-report.json"
                 },
                 features ="src/test/resources/features",
                 glue= "com/him/google",
-                dryRun = true
-              //  tags=
-
+                dryRun = true,
+              tags = "@Mytag"
         )
 public class CukesRunner {
 }

@@ -15,6 +15,9 @@ public class GooglePage extends Base_page {
     @FindBy (xpath = "//div[@class='yuRUbf']//a/h3")
     public List<WebElement> searchResults;
 
+    @FindBy (xpath = "//div [@class='FPdoLc lJ9FBc']//input[@class='gNO89b']")
+    public WebElement searchBtn;
+
 
 
 }
