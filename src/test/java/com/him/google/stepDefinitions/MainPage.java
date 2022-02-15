@@ -6,7 +6,8 @@ import com.him.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
+import org.testng.Assert;
+
 
 public class MainPage extends BrowserUtils {
 GooglePage googlePage= new GooglePage();
@@ -20,7 +21,6 @@ GooglePage googlePage= new GooglePage();
     public void userInputsAndPressesEnter(String searchItem) {
         fillInput(googlePage.searchBox, searchItem);
         clickEnterOnInput(googlePage.searchBox);
-
     }
 
 
