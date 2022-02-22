@@ -14,12 +14,19 @@ public class ApplePage extends Base_page {
     public List<WebElement> menuItems;
     @FindBy(xpath = "//ul[@class='ac-gn-list']")
     public WebElement parentOfMenuItems;
-
+    @FindBy (xpath= "//ul/li/a[@data-analytics-title='buy -  iphone 13 pro']")
+    public WebElement buyIphone13ProBtn;
+    @FindBy(xpath="//div/div/fieldset[@class='rc-dimension rf-flagship-productselection-dimension rf-flagship-productselection-dimensionscreensize']" )
+    WebElement capacityOptions;
 
     public WebElement getMenuItem(String menuItem) {
         return parentOfMenuItems.findElement(By.xpath(".//li/a[ ./span[.='" + menuItem + "'] ]" ));
 
     }
+
+//    public WebElement getCapacityOptions13Pro(String capacity13Pro){
+//        return capacityOptions.findElement(By.xpath(""))
+//    }
 
 
 }

@@ -1,10 +1,7 @@
 package com.him.runners;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
 
-
-
+import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions
         (
@@ -16,9 +13,9 @@ import io.cucumber.testng.CucumberOptions;
                 features ="src/test/resources/features",
                 glue= "com/him/google",
                 dryRun = true,
-              tags = "@Apple"
+              tags = "@Mytag"
         )
-public class Runner extends AbstractTestNGCucumberTests {
+public class Runner  {
 
 
 }

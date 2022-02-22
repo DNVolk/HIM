@@ -15,7 +15,7 @@ Feature: Buying Iphone experience
     Then user should be on "iPhone - Apple" page
     When user clicks "" button
     Then user should be on "" page
-    And user should be able to see following available products
+    And user should be able to see following available options
       | iPhone 13 Pro     |
       | iPhone 13 Pro Max |
     When user selects "" product
